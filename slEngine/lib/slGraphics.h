@@ -74,8 +74,16 @@ void fillRectangle( char,   int,    int,    int,    int,    int);
 void fillCircle(    char,   int,    int,    int,    int);
 void drawCircle(    char,   int,    int,    int,    int);
 
+
+
+/*~~~~~~~~~~~~~~~~~~~~ DELETED FOR THE MOMENT ~~~~~~~~~~~~~~~~~~~~~~~~
+
 //            what?     x1      y1      x2      y2      color
-void drawLine(char,     int,    int,    int,    int,    int);
+//void drawLine(char,     int,    int,    int,    int,    int);
+
+//~~~~~~~~~~~~~~~~~~~~ DELETED FOR THE MOMENT ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
 
 //==============================================================================
 void setWindowSize(int, int);

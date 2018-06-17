@@ -193,6 +193,10 @@ void drawCircle(char c, int x, int y, int r, int color)
 }
 
 //==============================================================================
+
+
+/*~~~~~~~~~~~~~~~~~~~~ DELETED FOR THE MOMENT ~~~~~~~~~~~~~~~~~~~~~~~~
+
 void drawLine(char c, int x1, int y1, int x2, int y2, int color)
 {
     setColor(color);
@@ -214,7 +218,7 @@ void drawLine(char c, int x1, int y1, int x2, int y2, int color)
             h = y2 - y1;
         }
 
-        for(int x=x1; x<w+x1; x++)
+        for(int x=x1; x<x2; x++)
         {
             int y = (int)(x*h/w);
             draw(c, x, y);
@@ -229,7 +233,7 @@ void drawLine(char c, int x1, int y1, int x2, int y2, int color)
             w = x2 - x1;
             h = y2 - y1;
         }
-        for(int y=y1; y<h+y1; y++)
+        for(int y=y1; y<y2; y++)
         {
             int x = (int)(y*w/h);
             draw(c, x, y);
@@ -237,11 +241,14 @@ void drawLine(char c, int x1, int y1, int x2, int y2, int color)
     }
 }
 
+//~~~~~~~~~~~~~~~~~~~~ DELETED FOR THE MOMENT ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+//==============================================================================
 void setWindowSize(int nw, int nh) {
     WW = nw;
     WH = nh;
-
-	//system(((string)"mode " + toString(WW) + ',' + toString(WH)).c_str());
 
     system((toString("mode ")+toString(WW)+','+toString(WH)).c_str());
 }
