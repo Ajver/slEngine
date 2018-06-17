@@ -7,15 +7,23 @@ using namespace std;
 int main()
 {
     setWindowSize(120, 40);
+    hideCursor();
 
-    setBackgroundColor(2);
+    setBackgroundColor(slDARK_GRAY);
 
-    draw("Hello whole world!", "center", 3, slPURPLE);
-    write("This is my program created for testing slEngine.", "center", 5, slGRAY, 20);
+    draw("Hello whole world!", "center", 3, slCYAN);
+    write("This is my program created for testing slEngine.", "center", 5, slWHITE, 20);
 
     drawCircle('$', 10, 30, 8, slBLUE);
 
-    //drawLine('-', 22, 20, 50, 29, slDARK_BLUE);
+    drawCircle('.', -10, -30, getWindowWidth(), slCYAN);
+    drawCircle('.', -6, -30, getWindowWidth(), slCYAN);
+
+    translate(-30, 0);
+
+    draw("Lorem ipsum", "right", 20, slGRAY);
+
+    translate(30, 0);
 
     pause();
 

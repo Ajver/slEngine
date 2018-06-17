@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1529271423 source:d:\git repositories\slengine\slengine\lib\slgraphics.cpp
+1529271701 source:d:\git repositories\slengine\slengine\lib\slgraphics.cpp
 	"slGraphics.h"
 
-1529271676 d:\git repositories\slengine\slengine\lib\slgraphics.h
+1529272123 d:\git repositories\slengine\slengine\lib\slgraphics.h
 	<iostream>
 	<windows.h>
 	<conio.h>

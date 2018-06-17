@@ -45,7 +45,13 @@ void cleanScreen()
 {
     system("cls");
 }
-
+void hideCursor()
+{
+    CONSOLE_CURSOR_INFO cursor;
+    GetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor);
+    cursor.bVisible = false;
+    SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor);
+}
 //==============================================================================
 void draw(char c)
 {
