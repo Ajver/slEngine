@@ -6,8 +6,8 @@ int cx = 0,
 int tx = 0,
     ty = 0;
 
-int WW = 30,
-    WH = 30;
+int WW = 80,
+    WH = 25;
 
 // Background color
 int bgColor = 0;
@@ -17,13 +17,6 @@ void setCursorPosition(int x, int y)
 {
     x += tx;
     y += ty;
-
-    /*
-    if(x < 0) return;
-    if(x > WW-1) return;
-    if(y < 0) return;
-    if(y > WH-1) return;
-    */
 
     COORD c;
     c.X = cx = x;
@@ -55,8 +48,9 @@ void hideCursor()
 //==============================================================================
 void draw(char c)
 {
-    if(!inScreen(cx, cy)) return;
-    cout << c;
+    if(inScreen(cx, cy))
+        putchar(c);
+
 }
 void draw(char c, int x, int y)
 {
@@ -255,6 +249,8 @@ void drawLine(char c, int x1, int y1, int x2, int y2, int color)
 void setWindowSize(int nw, int nh) {
     WW = nw;
     WH = nh;
+
+
 
     system((toString("mode ")+toString(WW)+','+toString(WH)).c_str());
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <time.h>
 
 #include "lib/slEngine.h"
 
@@ -6,8 +7,9 @@ using namespace std;
 
 int main()
 {
-    setWindowSize(120, 40);
-    hideCursor();
+    setUpEngine(120, 40);
+
+    int start = clock();
 
     setBackgroundColor(slDARK_GRAY);
 
@@ -24,6 +26,10 @@ int main()
     draw("Lorem ipsum", "right", 20, slGRAY);
 
     translate(30, 0);
+
+    int stop = clock();
+
+    draw(stop-start, 10, 10, slRED);
 
     pause();
 

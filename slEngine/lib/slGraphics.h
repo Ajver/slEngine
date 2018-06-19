@@ -6,6 +6,7 @@
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
+#include <stdio.h>
 
 #include "slVariables.h"
 #include "slVec2D.h"
