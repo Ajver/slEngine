@@ -32,6 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="lib/slEngine.cpp" />
+		<Unit filename="lib/slEngine.h" />
+		<Unit filename="lib/slGraphics.cpp" />
+		<Unit filename="lib/slGraphics.h" />
+		<Unit filename="lib/slVariables.cpp" />
+		<Unit filename="lib/slVariables.h" />
+		<Unit filename="lib/slVec2D.cpp" />
+		<Unit filename="lib/slVec2D.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
