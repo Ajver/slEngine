@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1529439866 source:d:\git repositories\slengine\slengine\lib\slgraphics.cpp
+1530352193 source:d:\git repositories\slengine\slengine\lib\slgraphics.cpp
 	"slGraphics.h"
 
-1529437448 d:\git repositories\slengine\slengine\lib\slgraphics.h
+1530352193 d:\git repositories\slengine\slengine\lib\slgraphics.h
 	<iostream>
 	<windows.h>
 	<conio.h>
@@ -10,27 +10,26 @@
 	"slVariables.h"
 	"slVec2D.h"
 
-1529960414 d:\git repositories\slengine\slengine\lib\slvariables.h
+1530352193 d:\git repositories\slengine\slengine\lib\slvariables.h
 	<iostream>
 
-1529437032 d:\git repositories\slengine\slengine\lib\slvec2d.h
+1530352193 d:\git repositories\slengine\slengine\lib\slvec2d.h
 
-1529961233 source:d:\git repositories\slengine\slengine\lib\slvariables.cpp
+1530352193 source:d:\git repositories\slengine\slengine\lib\slvariables.cpp
 	"slVariables.h"
 
-1529437032 source:d:\git repositories\slengine\slengine\lib\slvec2d.cpp
+1530352193 source:d:\git repositories\slengine\slengine\lib\slvec2d.cpp
 	"slVec2D.h"
 
-1529439814 source:d:\git repositories\slengine\slengine\lib\slengine.cpp
+1530352193 source:d:\git repositories\slengine\slengine\lib\slengine.cpp
 	"slEngine.h"
 
-1529956070 d:\git repositories\slengine\slengine\lib\slengine.h
+1530352278 d:\git repositories\slengine\slengine\lib\slengine.h
 	"slGraphics.h"
 	"slVariables.h"
 	"slVec2D.h"
-	"slUltraVar.h"
 
-1529960844 source:d:\git repositories\slengine\slengine\main.cpp
+1530352193 source:d:\git repositories\slengine\slengine\main.cpp
 	<iostream>
 	<time.h>
 	"lib/slEngine.h"
