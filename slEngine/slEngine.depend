@@ -30,11 +30,10 @@
 	"slVec2D.h"
 	"slGigano.h"
 
-1530357256 source:d:\git repositories\slengine\slengine\main.cpp
+1530358403 source:d:\git repositories\slengine\slengine\main.cpp
 	<iostream>
 	<time.h>
 	"lib/slEngine.h"
-	"lib/slGigano.h"
 
 1529960258 d:\git repositories\slengine\slengine\lib\slultravar.h
 	<iostream>
@@ -46,9 +45,9 @@
 1529439866 d:\git repositories\slengine\slengine\lib\slgraphics.cpp
 	"slGraphics.h"
 
-1530357407 source:d:\git repositories\slengine\slengine\lib\slgigano.cpp
+1530358386 source:d:\git repositories\slengine\slengine\lib\slgigano.cpp
 	"slGigano.h"
 
-1530357416 d:\git repositories\slengine\slengine\lib\slgigano.h
+1530357760 d:\git repositories\slengine\slengine\lib\slgigano.h
 	<iostream>
 

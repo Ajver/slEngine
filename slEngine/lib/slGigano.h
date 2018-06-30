@@ -25,6 +25,9 @@ public:
     bool add(slGigano);
     bool add(int);
 
+    bool substract(slGigano);
+    bool substract(int);
+
     bool multiply(slGigano);
     bool multiply(int);
 

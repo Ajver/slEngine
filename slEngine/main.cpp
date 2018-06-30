@@ -20,27 +20,16 @@ int main()
     slGigano num1;
     slGigano num2;
 
-    num1.set(99922);
-    for(int x=0; x<50; x++)
-        cout << (int)num1.get(x);
+    num1.set(123123123);
+    num2.set(7483852);
 
-    cout << endl;
+    draw(num1.getString(), 0, 0, slBLUE);
+    draw(num2.getString(), 0, 1, slBLUE);
 
-    num2.set(923);
-    for(int x=0; x<50; x++)
-        cout << (int)num2.get(x);
+    draw("--------------------------------------------------------------", 0, 2, slBLUE);
 
-    cout << endl << "----------------------------------------------------------" << endl;
-    int start = clock();
-    num1.multiply(num2);
-    int stop = clock();
-    cout << "-------------------------------------------------------------------" << endl;
-
-    draw(num1.getString(), 0, 56, slBLUE);
-
-    cout << endl;
-
-    draw(stop-start, 80, 15, slRED);
+    num1.substract(7483852);
+    draw(num1.getString(), 0, 3, slGREEN);
 
     ////////////////////////////////
 

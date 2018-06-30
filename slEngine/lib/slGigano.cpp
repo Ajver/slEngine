@@ -1,5 +1,6 @@
 #include "slGigano.h"
 
+#include "slGraphics.h"
 
 
 slGigano::slGigano() {
@@ -62,6 +63,31 @@ bool slGigano::add(int a) {
 
     return add(ga);
 }
+
+bool slGigano::substract(slGigano a) {
+    int offset = 0;
+
+    for(int i=len-1; i>=0; i--) {
+        int cur = val[i] + root;
+        int next = cur - a.get(i) - offset;
+
+        val[i] = next % root;
+
+        if(next < root)
+            offset = 1;
+        else
+            offset = 0;
+    }
+
+    return true;
+}
+bool slGigano::substract(int a) {
+    slGigano ga;
+    ga.set(a);
+
+    return substract(ga);
+}
+
 bool slGigano::multiply(slGigano a) {
     int offset = 0;
     slGigano next[len];
