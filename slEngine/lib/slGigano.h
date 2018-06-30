@@ -35,6 +35,9 @@ public:
     bool divideInt(slGigano);
     bool divideInt(int);
 
+    bool pow(slGigano);
+    bool pow(int);
+
     bool isPositive();
     void setPositive(bool);
 
@@ -47,7 +50,7 @@ public:
     bool equalTo(int);
 
 private:
-    int len = 50;
+    int len = 600;
     char root = 10;
     unsigned char *val;
 

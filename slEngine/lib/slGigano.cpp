@@ -112,7 +112,6 @@ bool slGigano::substract(slGigano a) {
 bool slGigano::substract(int a) {
     slGigano ga;
     ga.set(a);
-
     return substract(ga);
 }
 
@@ -148,6 +147,17 @@ bool slGigano::multiply(int a) {
 }
 
 bool slGigano::divideInt(slGigano a) {
+    bool nextPositive = _isPositive == a.isPositive();
+
+    slGigano counter;draw('1', 90, 0, slRED);
+
+    while(gt(a)) {
+        substract(a);
+        counter.add(1);
+    }
+
+    set(counter);
+    _isPositive = nextPositive;
 
     return true;
 }
@@ -157,6 +167,33 @@ bool slGigano::divideInt(int a) {
     return divideInt(ga);
 }
 
+bool slGigano::pow(slGigano a) {
+    a.add(1);
+    bool aPositive = a.isPositive();
+    a.setPositive(true);
+
+    slGigano gthis;
+    gthis.set(get());
+    set(1);
+
+    while(a.gt(1)) {
+        a.substract(1);
+        if(aPositive) {
+            if(!multiply(gthis))
+                return false;
+        }else {
+            if(!divideInt(gthis))
+                return false;
+        }
+    }
+
+    return true;
+}
+bool slGigano::pow(int a) {
+    slGigano ga;
+    ga.set(a);
+    return pow(ga);
+}
 bool slGigano::gt(slGigano a) {
     for(int i=0; i<len; i++) {
         if(val[i] != a.get(i))
@@ -223,8 +260,17 @@ slGigano slGigano::get() {
 
 string slGigano::getString() {
     string str = _isPositive ? "+" : "-";
-    for(int i=0; i<len; i++)
-        str += val[i]+48;
+    bool zeros = true;
+
+    for(int i=0; i<len; i++) {
+        if(zeros) {
+            if(val[i] != 0) {
+                zeros = false;
+                str += val[i]+48;
+            }
+        }else
+            str += val[i]+48;
+    }
 
     return str;
 }

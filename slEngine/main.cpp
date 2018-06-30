@@ -7,9 +7,7 @@ using namespace std;
 
 int main()
 {
-    setUpEngine(120, 70);
-
-
+    setUpEngine(80, 20);
 
     setBackgroundColor(slDARK_GRAY);
 
@@ -17,19 +15,30 @@ int main()
     setCursorPosition(0,0);
     setColor(slGREEN);
 
+
+
     slGigano num1;
     slGigano num2;
 
-    num1.set(-7483852);
-    num2.set(-2131231232);
+    num1.set(1024);
+    num2.set(128);
 
-    draw(num1.getString(), 0, 0, slBLUE);
-    draw(num2.getString(), 0, 1, slBLUE);
+    draw(num1.getString(), 0, 0, slDARK_BLUE);
+    draw(num2.getString(), 0, 1, slDARK_BLUE);
 
     draw("--------------------------------------------------------------", 0, 2, slBLUE);
 
-    num1.multiply(num2);
-    draw(num1.getString(), 0, 3, slGREEN);
+    int start = clock();
+    num1.pow(num2);
+    int stop = clock();
+
+    //draw(num1.getString(), 0, 3, slGREEN);
+
+    setCursorPosition(0, 5);
+    setColor(slDARK_PURPLE);
+    cout << num1.getString() << endl;
+
+    draw(stop-start, 10, 10, slDARK_RED);
 
     ////////////////////////////////
 
