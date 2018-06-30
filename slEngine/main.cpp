@@ -2,7 +2,6 @@
 #include <time.h>
 
 #include "lib/slEngine.h"
-#include "lib/slGigano.h"
 
 using namespace std;
 
