@@ -147,14 +147,14 @@ bool slGigano::multiply(int a) {
     return multiply(ga);
 }
 
-bool slGigano::divide(slGigano a) {
+bool slGigano::divideInt(slGigano a) {
 
     return true;
 }
-bool slGigano::divide(int a) {
+bool slGigano::divideInt(int a) {
     slGigano ga;
     ga.set(a);
-    return divide(ga);
+    return divideInt(ga);
 }
 
 bool slGigano::gt(slGigano a) {

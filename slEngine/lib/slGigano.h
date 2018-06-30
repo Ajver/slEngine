@@ -31,8 +31,9 @@ public:
     bool multiply(slGigano);
     bool multiply(int);
 
-    bool divide(slGigano);
-    bool divide(int);
+    // Divide as integer variables ("1.23" is equal just "1")
+    bool divideInt(slGigano);
+    bool divideInt(int);
 
     bool isPositive();
     void setPositive(bool);
