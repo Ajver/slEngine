@@ -8,9 +8,9 @@ using namespace std;
 
 int main()
 {
-    setUpEngine(120, 40);
+    setUpEngine(120, 70);
 
-    int start = clock();
+
 
     setBackgroundColor(slDARK_GRAY);
 
@@ -21,18 +21,33 @@ int main()
     slGigano num1;
     slGigano num2;
 
-    num1.set(999);
-    cout << endl;
-    num2.set(9);
+    num1.set(99922);
+    for(int x=0; x<50; x++)
+        cout << (int)num1.get(x);
 
-    cout << endl << "-------------------------------------------" << endl;
-    num1.add(num2);
+    cout << endl;
+
+    num2.set(923);
+    for(int x=0; x<50; x++)
+        cout << (int)num2.get(x);
+
+    cout << endl << "----------------------------------------------------------" << endl;
+    int start = clock();
+    num1.multiply(num2);
+    int stop = clock();
+    cout << "-------------------------------------------------------------------" << endl;
+
+    draw(num1.getString(), 0, 56, slBLUE);
+
+    cout << endl;
+
+    draw(stop-start, 80, 15, slRED);
 
     ////////////////////////////////
 
-    //pause();
+    pause();
 
-    //cleanScreen();
+    cleanScreen();
 
     return 0;
 }
