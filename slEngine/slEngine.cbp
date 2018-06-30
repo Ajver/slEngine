@@ -36,6 +36,8 @@
 		<Unit filename="lib/slEngine.h" />
 		<Unit filename="lib/slGraphics.cpp" />
 		<Unit filename="lib/slGraphics.h" />
+		<Unit filename="lib/slUltraVar.cpp" />
+		<Unit filename="lib/slUltraVar.h" />
 		<Unit filename="lib/slVariables.cpp" />
 		<Unit filename="lib/slVariables.h" />
 		<Unit filename="lib/slVec2D.cpp" />

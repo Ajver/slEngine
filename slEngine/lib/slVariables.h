@@ -11,7 +11,7 @@ extern string cutString(string, int, int);
 
 extern string toString(int);
 extern string toString(const char[]);
-extern string toString(float);
+extern string toString(double);
 
 extern const char* toCharArr(int);
 extern const char* toCharArr(string);

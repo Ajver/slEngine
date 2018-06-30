@@ -45,19 +45,19 @@ string toString(int a)
     return str;
 }
 
-string toString(const char c[]) 
+string toString(const char c[])
 {
 	return (string)c;
 }
 
-string toString(float a)
+string toString(double a)
 {
     a *= 10000000;
 
     string str = toString((int)a);
 
-    string beginS = cutString(str, 0, str.length()-8);
-    string finishS = cutString(str, str.length()-7, str.length()-1);
+    string beginS = str.substr(0, str.length()-8); //cutString(str, 0, str.length()-8);
+    string finishS = str.substr(str.length()-7, str.length()-1);
 
     str = beginS + '.' + finishS;
 
