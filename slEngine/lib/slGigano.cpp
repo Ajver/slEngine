@@ -4,8 +4,6 @@
 
 slGigano::slGigano() {
     root = 10;
-
-    len = 256;
     val = new char[len];
 
     clear();
@@ -14,15 +12,13 @@ slGigano::slGigano(int nroot) {
     if(root < 2) root = 2;
     else root = nroot;
 
-    len = 256;
     val = new char[len];
 
     clear();
 }
 void slGigano::clear() {
-    for(int i=0; i<len; i++) {
+    for(int i=0; i<len; i++)
         val[i] = 0;
-    }
 }
 
 bool slGigano::add(slGigano a) {
@@ -32,10 +28,6 @@ bool slGigano::add(slGigano a) {
         offset += a.get(i) + val[i];
         val[i] = offset % root;
         offset /= root;
-
-        for(int i=0; i<len; i++) {
-            cout << val[i];
-        }
     }
 
     return true;
@@ -47,7 +39,18 @@ bool slGigano::add(int a) {
     return add(ga);
 }
 void slGigano::set(int a) {
+    clear();
+    int i = len-1;
 
+    do {
+        val[i] = a%10;
+        a /= 10;
+        i--;
+    }while(a != 0);
+}
+void slGigano::set(slGigano a) {
+    for(int i=0; i<len; i++)
+        val[i] = a.get(i);
 }
 
 char slGigano::get(int i) {

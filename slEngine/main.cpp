@@ -14,15 +14,25 @@ int main()
 
     setBackgroundColor(slDARK_GRAY);
 
-    slGigano num;
+    translateTo(0,0);
+    setCursorPosition(0,0);
+    setColor(slGREEN);
 
-    draw((int)num.get(0), 0, 0, slGREEN);
+    slGigano num1;
+    slGigano num2;
+
+    num1.set(999);
+    cout << endl;
+    num2.set(9);
+
+    cout << endl << "-------------------------------------------" << endl;
+    num1.add(num2);
 
     ////////////////////////////////
 
-    pause();
+    //pause();
 
-    cleanScreen();
+    //cleanScreen();
 
     return 0;
 }

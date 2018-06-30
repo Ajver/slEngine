@@ -26,10 +26,11 @@ public:
     bool isPositive();
 
 private:
-    int len = 256;
+    int len = 10;
     char root = 10;
     char *val;
 
-    bool isPositive;
+    // Zero is positive too in this class
+    bool bPositive;
 
 };
