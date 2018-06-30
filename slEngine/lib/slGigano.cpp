@@ -149,7 +149,7 @@ bool slGigano::multiply(int a) {
 bool slGigano::divideInt(slGigano a) {
     bool nextPositive = _isPositive == a.isPositive();
 
-    slGigano counter;draw('1', 90, 0, slRED);
+    slGigano counter;
 
     while(gt(a)) {
         substract(a);
