@@ -31,12 +31,24 @@ public:
     bool multiply(slGigano);
     bool multiply(int);
 
+    bool divide(slGigano);
+    bool divide(int);
+
     bool isPositive();
+    void setPositive(bool);
+
+    // Grates than, Less than...
+    bool gt(slGigano);
+    bool gt(int);
+    bool lt(slGigano);
+    bool lt(int);
+    bool equalTo(slGigano);
+    bool equalTo(int);
 
 private:
     int len = 50;
     char root = 10;
-    char *val;
+    unsigned char *val;
 
     // Zero is positive too in this class
     bool _isPositive = true;
