@@ -52,3 +52,39 @@
 1530374285 d:\git repositories\slengine\slengine\lib\slgigano.h
 	<iostream>
 
+1542739948 source:c:\users\uczeñ\documents\github\slengine\slengine\lib\slengine.cpp
+	"slEngine.h"
+
+1542740765 c:\users\uczeñ\documents\github\slengine\slengine\lib\slengine.h
+	"slGraphics.h"
+	"slVariables.h"
+	"slVec2D.h"
+
+1542739948 c:\users\uczeñ\documents\github\slengine\slengine\lib\slgraphics.h
+	<iostream>
+	<windows.h>
+	<conio.h>
+	<stdio.h>
+	"slVariables.h"
+	"slVec2D.h"
+
+1542739948 c:\users\uczeñ\documents\github\slengine\slengine\lib\slvariables.h
+	<iostream>
+
+1542739948 c:\users\uczeñ\documents\github\slengine\slengine\lib\slvec2d.h
+
+1542739948 source:c:\users\uczeñ\documents\github\slengine\slengine\lib\slgraphics.cpp
+	"slGraphics.h"
+
+1542739948 source:c:\users\uczeñ\documents\github\slengine\slengine\lib\slvariables.cpp
+	"slVariables.h"
+
+1542739948 source:c:\users\uczeñ\documents\github\slengine\slengine\lib\slvec2d.cpp
+	"slVec2D.h"
+
+1542743091 source:c:\users\uczeñ\documents\github\slengine\slengine\main.cpp
+	<iostream>
+	<time.h>
+	<string>
+	"lib/slGraphics.h"
+

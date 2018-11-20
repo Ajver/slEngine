@@ -1,44 +1,36 @@
 #include <iostream>
 #include <time.h>
+#include <string>
 
-#include "lib/slEngine.h"
+#include "lib/slGraphics.h"
 
 using namespace std;
 
+void drawChessboard() {
+    cleanScreen();
+    for (int j=0;j<getWindowHeight();j+=2) {
+        for(int i=0;i<getWindowWidth();i+=2) {
+            draw((char)219, i, j, slBLACK);
+            draw((char)219, i+1, j+1, slBLACK);
+        }
+    }
+}
+
 int main()
 {
-    setUpEngine(80, 20);
+    //setUpEngine(80, 20);
+
+    setWindowSize(40, 20);
 
     setBackgroundColor(slDARK_GRAY);
 
-    translateTo(0,0);
-    setCursorPosition(0,0);
-    setColor(slGREEN);
+    for(int i;;i)
+    drawChessboard();
 
 
-
-    slGigano num1;
-    slGigano num2;
-
-    num1.set(1024);
-    num2.set(128);
-
-    draw(num1.getString(), 0, 0, slDARK_BLUE);
-    draw(num2.getString(), 0, 1, slDARK_BLUE);
-
-    draw("--------------------------------------------------------------", 0, 2, slBLUE);
-
-    int start = clock();
-    num1.pow(num2);
-    int stop = clock();
-
-    //draw(num1.getString(), 0, 3, slGREEN);
-
-    setCursorPosition(0, 5);
-    setColor(slDARK_PURPLE);
-    cout << num1.getString() << endl;
-
-    draw(stop-start, 10, 10, slDARK_RED);
+    // Sleep(100);
+    // cleanScreen();
+    //translate(-1,0);
 
     ////////////////////////////////
 
